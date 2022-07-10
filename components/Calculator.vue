@@ -53,7 +53,9 @@ export default {
                 const number = eval(this.result); 
                 number > 1e7 ? 
                 this.result = number.toExponential(3) : 
-                this.result = number;
+                Number.isInteger(number) ? 
+                this.result = number :
+                this.result = number.toFixed(2);
             } catch (error) {
                 if (error instanceof SyntaxError) {
                     this.result = 'Ошибка';

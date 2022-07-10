@@ -4,6 +4,7 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
+    color: hsl(202, 11%, 29%);
 }
 
 .calculator {
@@ -13,7 +14,6 @@ body {
     margin-inline-end: auto;
     margin-block-start: 2em;
     max-inline-size: 22rem;
-    color: hsl(202, 11%, 29%);
     overflow: hidden;
 }
 .calculator__output {
